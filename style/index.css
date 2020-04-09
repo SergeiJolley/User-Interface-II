@@ -1,1 +1,243 @@
 /* Add CSS styling here */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0%;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    max-width: 100%;
+
+}
+
+.topBar {
+    max-width: 100%;
+    padding: 1%;
+    font-size: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: grey;
+}
+
+.topBar a {
+    margin-right: 1%;
+}
+
+.projs {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 0 auto;
+    padding: 1%;
+    padding-right: 10%;
+
+}
+
+h2 {
+    font-size: xx-large;
+    padding: 5%;
+}
+
+.projInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 30%;
+    padding-top: 10%;
+    line-height: 2rem;
+
+
+}
+
+
+
+.picz {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+
+
+}
+
+.picz2 {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+
+
+}
+
+footer {
+    max-width: 100%;
+    font-size: 2rem;
+    justify-content: center;
+    padding: 5%;
+    align-content: space-between;
+    background-color: grey;
+}
+
+
+a.button1 {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+
+
+}
+
+a.button1:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+}
+
+@media(max-width:800px) {
+    .projs {
+        flex-direction: column;
+    }
+
+    body {
+        padding: 0.5rem;
+    }
+
+
+    .topBar {
+        text-align: center;
+
+    }
+
+    .topBar a {
+        margin-right: 10%;
+    }
+
+    .projInfo {
+        max-width: 50%;
+        padding-bottom: 10%;
+    }
+}
+
+@media(max-width:500px) {
+    .topBar {
+        text-align: center;
+        padding: 5%;
+    }
+
+    .projs {
+        padding-bottom: 5%;
+    }
+
+    .picz,
+    .picz2 {
+        padding: 5%;
+    }
+}
+
+@media(min-width:1219px) {
+
+    .picz2,
+    .picz {
+        flex-wrap: nowrap;
+        padding: 1%;
+    }
+}
